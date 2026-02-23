@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizSphere Pro 2.0 | Advanced Intelligence Platform</title>
+    <meta name="description"
+        content="An enterprise-grade, high-performance quiz assessment platform. Built for performance tracking and talent evaluation.">
+
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Dashboard Interface -->
+        <main id="home-screen" class="glass-panel animate-slide-up">
+            <div
+                style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+                <div>
+                    <span class="hero-badge">Enterprise v2.0</span>
+                    <h1 class="hero-title">Assess Your<br><span style="color: var(--primary);">Potential.</span></h1>
+                </div>
+                <button id="view-leaderboard" class="btn-premium btn-secondary" style="padding: 0.75rem 1.25rem;">
+                    <i data-lucide="award" style="width: 20px;"></i>
+                    Rankings
+                </button>
+            </div>
+
+            <p style="color: var(--text-dim); max-width: 500px; line-height: 1.6; margin-bottom: 2rem;">
+                Select a specialized track below to begin your high-stakes evaluation. Each session is timed and
+                optimized for real-time skill mapping.
+            </p>
+
+            <div class="category-grid">
+                <div class="category-card" onclick="selectCategory('frontend')">
+                    <i data-lucide="layout" style="color: var(--primary-light);"></i>
+                    <span>Frontend Engineering</span>
+                    <small>React, CSS3, DOM Ops</small>
+                </div>
+                <div class="category-card" onclick="selectCategory('backend')">
+                    <i data-lucide="server" style="color: var(--accent);"></i>
+                    <span>System Architecture</span>
+                    <small>Node.js, NoSQL, Status Codes</small>
+                </div>
+                <div class="category-card" onclick="selectCategory('logic')">
+                    <i data-lucide="zap" style="color: var(--warning);"></i>
+                    <span>Algorithmic Logic</span>
+                    <small>Patterns, Math, Reasoning</small>
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+                <button id="start-btn" class="btn-premium btn-primary hidden">
+                    Initialize Assessment
+                    <i data-lucide="terminal"></i>
+                </button>
+            </div>
+        </main>
+
+        <!-- Evaluation Engine -->
+        <section id="quiz-screen" class="glass-panel hidden">
+            <header class="quiz-header">
+                <div class="stat-box">
+                    <span class="stat-label">Progress</span>
+                    <span id="question-counter" class="stat-value">01/10</span>
+                </div>
+
+                <div class="timer-portal">
+                    <svg width="64" height="64" style="transform: rotate(-90deg);">
+                        <circle class="timer-circle-bg" cx="32" cy="32" r="28"></circle>
+                        <circle id="timer-progress" class="timer-circle-prog" cx="32" cy="32" r="28"
+                            stroke-dasharray="176" stroke-dashoffset="0"></circle>
+                    </svg>
+                    <span id="time-left" class="timer-label">15</span>
+                </div>
+
+                <div class="stat-box" style="text-align: right;">
+                    <span class="stat-label">Metric Score</span>
+                    <span id="live-score" class="stat-value">000</span>
+                </div>
+            </header>
+
+            <div id="quiz-engine-body" class="animate-slide-up">
+                <div style="margin-bottom: 2rem;">
+                    <span id="difficulty-badge" class="hero-badge"
+                        style="font-size: 0.65rem; padding: 4px 12px; margin-bottom: 1rem;">SYSTEM READY</span>
+                    <h2 id="question-text" style="font-size: 1.75rem; font-weight: 700; line-height: 1.35;">Analyzing
+                        next core module...</h2>
+                </div>
+
+                <div id="options-stack" class="options-container"></div>
+            </div>
+
+            <footer style="margin-top: 3rem; display: flex; justify-content: space-between; align-items: center;">
+                <span id="feedback-text" style="font-size: 0.9rem; font-weight: 600; letter-spacing: 0.5px;"></span>
+                <button id="next-btn" class="btn-premium btn-primary hidden">
+                    Process Next
+                    <i data-lucide="arrow-right"></i>
+                </button>
+            </footer>
+        </section>
+
+        <!-- Analytics Dashboard -->
+        <section id="result-screen" class="glass-panel hidden">
+            <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem;">Performance Report</h1>
+            <p id="result-sentiment" style="color: var(--text-dim); margin-bottom: 2.5rem;">Aggregating final session
+                metrics...</p>
+
+            <div id="high-score-entry" class="hidden">
+                <div
+                    style="background: rgba(16, 185, 129, 0.08); padding: 1.5rem; border-radius: 20px; margin-bottom: 2rem; border: 1px solid rgba(16, 185, 129, 0.3);">
+                    <small
+                        style="color: var(--success); font-weight: 800; text-transform: uppercase; letter-spacing: 2px;">Credential
+                        Breakthrough</small>
+                    <h3 style="margin: 0.5rem 0 1rem; color: white;">You have logged a new high score.</h3>
+                    <input type="text" id="player-name" class="input-modern" placeholder="Enter Full Name..."
+                        maxlength="20">
+                    <button id="save-score-btn" class="btn-premium btn-primary" style="width: 100%;">Commit to
+                        Registry</button>
+                </div>
+            </div>
+
+            <div class="score-dashboard">
+                <div class="analytics-pill">
+                    <p>Accuracy Rating</p>
+                    <h2 id="accuracy-val">0%</h2>
+                </div>
+                <div class="analytics-pill">
+                    <p>Aggregated Points</p>
+                    <h2 id="final-score">0</h2>
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                <button id="restart-btn" class="btn-premium btn-primary" style="flex: 1.5;">
+                    <i data-lucide="play-circle"></i>
+                    Initialize New Session
+                </button>
+                <button id="review-btn" class="btn-premium btn-secondary" style="flex: 1;">
+                    <i data-lucide="clipboard-list"></i>
+                    Review Audit
+                </button>
+            </div>
+
+            <div id="review-section" class="review-container hidden"
+                style="margin-top: 2rem; max-height: 300px; overflow-y: auto;"></div>
+        </section>
+    </div>
+
+    <!-- Leaderboard Modal -->
+    <div id="leaderboard-modal" class="modal-overlay hidden">
+        <div class="leaderboard-container animate-slide-up">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2.5rem;">
+                <h2 style="font-size: 1.75rem; font-weight: 800; display: flex; align-items: center; gap: 0.75rem;">
+                    <i data-lucide="award" style="color: var(--warning);"></i>
+                    Global Registry
+                </h2>
+                <button id="close-leaderboard"
+                    style="background: none; border: none; color: white; cursor: pointer; opacity: 0.5; transition: 0.3s;"
+                    onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.5">
+                    <i data-lucide="x-circle"></i>
+                </button>
+            </div>
+            <div id="leaderboard-list"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>
