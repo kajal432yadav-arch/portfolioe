@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kajal Yadav - Web Developer</title>
+    <meta name="description"
+        content="Portfolio of Kajal Yadav, Information Technology undergraduate and full-stack developer specializing in React.js, Node.js, Python, and more.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <header class="glass-nav">
+        <div class="logo">KY<span>.</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="Kajal Yadav - Resumes (1).pdf" target="_blank">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+        <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content fade-up">
+                <div class="status-badge">Available for Work</div>
+                <h1 class="title">Hi, I'm <span class="gradient-text">Kajal Yadav</span></h1>
+                <h2 class="subtitle">Web Developer</h2>
+                <p class="description">
+                    Motivated Information Technology undergraduate with a strong foundation in scalable web development.
+                    Passionate about crafting modern digital experiences.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="Kajal Yadav - Resumes (1).pdf" target="_blank" class="btn secondary-btn glass-btn">Download Resume</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/kajal432yadav-arch" target="_blank" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="mailto:kajal432yadav@gmail.com" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                    <a href="tel:9594397965" aria-label="Phone">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image fade-in">
+                <div class="image-wrapper glass-panel">
+                    <div class="abstract-visual">
+                        <div class="circle c1"></div>
+                        <div class="circle c2"></div>
+                        <div class="circle c3"></div>
+                        <span class="logo-large">KY</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section pt-section">
+            <div class="section-header fade-up">
+                <h2>About <span class="gradient-text">Me</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text glass-panel fade-up">
+                    <h3>My Journey</h3>
+                    <p>I am an IT undergraduate based in Mumbai, Maharashtra, seeking an entry-level web developer role. I enjoy transforming complex problems into elegant, optimized solutions.</p>
+                    <p>My education and project experience have equipped me with a strong foundation in modern web
+                        technologies, from creating interactive UIs to architecting secure backends.</p>
+                </div>
+
+                <div class="education-timeline fade-up" style="animation-delay: 0.2s;">
+                    <h3 class="mb-sm">Education</h3>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <h4>BSc Information Technology</h4>
+                        <span class="timeline-date">Present (SGPA: Sem V - 5.82)</span>
+                        <p>KES Shroff College of Commerce & Arts</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <h4>Higher Secondary Certificate (HSC)</h4>
+                        <span class="timeline-date">2023 | 83.17%</span>
+                        <p>Sheth G.H High School & JG College</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <h4>Secondary School Certificate (SSC)</h4>
+                        <span class="timeline-date">2021 | 81.60%</span>
+                        <p>Sheth G.H High School & JG College</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section pt-section">
+            <div class="section-header fade-up">
+                <h2>Technical <span class="gradient-text">Skills</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="skills-container fade-up">
+                <div class="skill-category glass-panel">
+                    <div class="skill-icon frontend-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <div class="skill-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React.js</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-panel">
+                    <div class="skill-icon backend-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                            </path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-panel">
+                    <div class="skill-icon db-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                    </div>
+                    <h3>Database & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section pt-section">
+            <div class="section-header fade-up">
+                <h2>Featured <span class="gradient-text">Projects</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: ShopVerse -->
+                <div class="project-card glass-panel fade-up">
+                    <div class="project-image">
+                        <img src="C:\Users\Mukesh\.gemini\antigravity\brain\470061d2-80f2-41a6-b8d9-2c732156561a\shopverse_preview_1776275597673.png"
+                            alt="ShopVerse E-commerce Design" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3>ShopVerse E-commerce Platform</h3>
+                        <p>A professional e-commerce platform with premium Midnight Blue UI/UX, built alongside a
+                            scalable backend and dynamic product management.</p>
+                        <div class="tech-stack-mini">
+                            <span>React</span> <span>Node.js</span> <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://kajal432yadav-arch.github.io/shops/" target="_blank" class="project-link">
+                                Live Demo <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Student Attendance -->
+                <div class="project-card glass-panel fade-up" style="animation-delay: 0.1s;">
+                    <div class="project-image">
+                        <img src="C:\Users\Mukesh\.gemini\antigravity\brain\470061d2-80f2-41a6-b8d9-2c732156561a\attendance_preview_1776275691711.png"
+                            alt="Student Attendance Dashboard" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3>Student Attendance System</h3>
+                        <p>Full-stack attendance management SPA with Flask, SQLite, secure auth, Chart.js dashboards,
+                            and CSV report exports.</p>
+                        <div class="tech-stack-mini">
+                            <span>Python</span> <span>Flask</span> <span>SQLite</span> <span>JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://studentattendencesystem.onrender.com" target="_blank" class="project-link">
+                                Live Demo <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Blockchain Certificate -->
+                <div class="project-card glass-panel fade-up" style="animation-delay: 0.2s;">
+                    <div class="project-image">
+                        <div class="abstract-visual"
+                            style="height: 200px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #6366f1, #a855f7);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"
+                                fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Blockchain Certificate System</h3>
+                        <p>A secure certificate issuance and verification platform using blockchain technology for
+                            immutable record keeping.</p>
+                        <div class="tech-stack-mini">
+                            <span>React</span> <span>Node.js</span> <span>Blockchain</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://blockchain-certificate-sandy.vercel.app/" target="_blank"
+                                class="project-link">
+                                Live Demo <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Food Website -->
+                <div class="project-card glass-panel fade-up" style="animation-delay: 0.3s;">
+                    <div class="project-image">
+                        <div class="abstract-visual"
+                            style="height: 200px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #f97316, #ef4444);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"
+                                fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                                <line x1="6" y1="1" x2="6" y2="4"></line>
+                                <line x1="10" y1="1" x2="10" y2="4"></line>
+                                <line x1="14" y1="1" x2="14" y2="4"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Premium Food Website</h3>
+                        <p>A modern, responsive food ordering application with an appetizing UI and dynamic menu
+                            management components.</p>
+                        <div class="tech-stack-mini">
+                            <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://kajal432yadav-arch.github.io/food/" target="_blank" class="project-link">
+                                Live Demo <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: QuizSphere Pro -->
+                <div class="project-card glass-panel fade-up" style="animation-delay: 0.4s;">
+                    <div class="project-image">
+                        <img src="C:\Users\Mukesh\.gemini\antigravity\brain\470061d2-80f2-41a6-b8d9-2c732156561a\quizsphere_preview_1776275723330.png"
+                            alt="QuizSphere Pro UI" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3>QuizSphere Pro</h3>
+                        <p>High-performance evaluation platform with persistent global leaderboard, SVG timers, and a
+                            premium Glassmorphism UI.</p>
+                        <div class="tech-stack-mini">
+                            <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://kajal432yadav-arch.github.io/quizeshare/" target="_blank"
+                                class="project-link">
+                                Live Demo <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/kajal432yadav-arch/quizeshare" target="_blank"
+                                class="project-link icon-only">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="glass-panel-bottom">
+        <div class="footer-content">
+            <div class="footer-logo">KY.</div>
+            <p>&copy; 2026 Kajal Yadav. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/kajal432yadav-arch" target="_blank" aria-label="GitHub">GitHub</a> |
+                <a href="mailto:kajal432yadav@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
